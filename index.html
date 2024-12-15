@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wheather-UI_Task</title>
+    <title>Here's the Check Out Wheather</title>
+    <link rel="shortcut icon" href="images/sun-001.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
     <h1>Weather App </h1>
-    <input type="text" id="city" placeholder="Enter City Name">
+    <input type="text" id="city" placeholder="Enter City Any Name" onkeypress="checkEnter(event)">
     <button class="btn-5" onclick="getWeather()">Search</button>
     <div id="weather">
 
     </div>
                        
 </div>
+<img src="" alt="">
 
 <script src="App.js"></script>
 </body>

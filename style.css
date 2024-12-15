@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 body{
@@ -13,28 +11,55 @@ body{
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 
 
 }
 
 .container{
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 20px;
     padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.533);
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.6s;
+    margin: 0 auto;
+    text-shadow:
+    0 0 5px#fff,
+   0 0 10px #fff,
+   0 0 20px #fff,
+   0 0 40px rgb(255, 0, 234),
+   0 0 80px rgb(255, 0, 179),
+   0 0 90px rgba(255, 0, 212, 0.986),
+   0 0 100px rgb(255, 0, 212),
+   0 0 150px rgb(255, 0, 255);
+
+}
+
+.container:hover{
+  background-color: rgba(0, 0, 0, 0.603);
+  transition: 0.5s; 
+}
+.container:hover h3{
+  color: black; 
 }
 h1{
     text-align: center;
     font-size: 50px;
     color: #ffffff;
     text-shadow:
-    0 0 5px #fff,
+     0 0 5px#302e2e,
     0 0 10px #fff,
-    0 0 20px #fff,
+    0 0 20px #685e5e,
     0 0 40px rgb(255, 0, 234),
     0 0 80px rgb(255, 0, 179),
     0 0 90px rgba(255, 0, 212, 0.5),
@@ -46,36 +71,21 @@ h1{
     height: 50px;
     margin: 0 auto;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.199);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.736);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 15px;
     padding: 10px;
     
-    
 }
+
 #weather{
-    width: 550px;
-    height: 500px;
-    margin: 0 auto;
-    border-radius: 20px;
-    background-image: url(images//purple.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* -webkit-backdrop-filter: blur(8px); */
-    backdrop-filter: blur(8px);
-    color: #fff;
-  text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px #0ff,
-    0 0 80px #0ff,
-    0 0 90px #0ff,
-    0 0 100px #0ff,
-    0 0 150px #0ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
+
 .temp{
     color: rgba(234, 0, 255, 0.726);
     text-align: center;
@@ -83,30 +93,45 @@ h1{
     top: 20px; ;
 }
 
+
 h2{
     text-align: center;
     font-size: 30px;
+    color: #000000;
 }
 h3{
     text-align: center;
-    font-size: 30px;
-    color: #ffffff;
+    font-size: 22px;
+    color: #000000;
+    list-style: 0px;
 }
 .btn-5 {
-    background: rgba(204, 28, 204, 0.952);
-    font-size:25px; 
+    background: #de43f0;
+    font-size:25px;
     line-height: 10px; 
-    padding: 20px 30px; 
+    padding: 20px 30px;
+    margin-top: 10px;
     border: none;
+    border-radius: 10px;
     position: relative; 
     color: white;
     cursor: pointer;
+    text-shadow:
+    0 0 5px#fff,
+   0 0 10px #fff,
+   0 0 20px #fff,
+   0 0 40px rgb(255, 0, 234),
+   0 0 80px rgb(255, 0, 179),
+   0 0 90px rgba(255, 0, 212, 0.5),
+   0 0 100px rgb(255, 0, 212),
+   0 0 150px rgb(255, 0, 255);
     
   }
   
   .btn-5:hover {
     background: transparent;
-    color: #21ebff;
+    border-radius: 10px;
+    color: #ffffff;
   }
   
   .btn-5:before,
@@ -116,10 +141,11 @@ h3{
     top: 0;
     right: 0;
     height: 2px;
-    background: #21ebff;
+    border-radius: 10px;
+    background: #ffffff;
     width: 0;
-    box-shadow: 0 0 5px #21ebff, 0 0 5px #21ebff inset;
-    transition: 400ms ease all;
+    box-shadow: 0 0 7px #ffffff, 0 0 5px #ffffff inset;
+    transition: 200ms ease;
   }
   
   .btn-5:after {
@@ -132,7 +158,7 @@ h3{
   .btn-5:hover:before,
   .btn-5:hover:after {
     width: 100%;
-    transition: 800ms ease all;
+    transition: 200ms ease all;
   }
   input{
     width: 400px;
@@ -143,5 +169,11 @@ h3{
     color: white;
     text-align: center;
     font-size: 20px;
+    
   }
   
+  img.weather-icon {
+  
+    width: 105px;
+    height: 80px;
+}
