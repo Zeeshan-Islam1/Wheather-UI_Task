@@ -23,10 +23,12 @@ function getWeather() {
         clear: "images/sun.png",
         clouds: "images/clouds.png",
         rain: "images/rain.png",
-        snow: "images/snow.png",
+        snow: "images/snowflake.png",
         thunderstorm: "images/bolt.png",
         drizzle: "images/drizzle.png",
         haze: "images/fog.png",
+        mist: "images/wind.png",
+        smoke: "images/smoke.png",
         default: "images/default_weather.png",
       };
 
