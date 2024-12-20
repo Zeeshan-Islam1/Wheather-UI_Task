@@ -5,7 +5,7 @@ var city = document.getElementById("city");
 
 function getWeather() {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=392fc470c1ac8b42b2f40951a9a96cc4&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=c3c8123716cb685192f2d1190164816c&units=metric`
   )
     .then(function (data) {
       return data.json();
